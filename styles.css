@@ -120,13 +120,6 @@ body {
   text-decoration: none;
 }
 
-.header-logo-img {
-  height: 38px;
-  width: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 0 6px rgba(255, 184, 0, 0.3));
-}
-
 .logo-title {
   font-family: var(--font-display);
   font-size: 1.35rem;
@@ -276,6 +269,24 @@ body {
   width: 60%;
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+}
+
+.hero-logo-wrap {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo-img {
+  height: 125px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 22px rgba(255, 184, 0, 0.45));
+  transition: transform 0.3s ease;
+}
+
+.hero-logo-img:hover {
+  transform: scale(1.05);
 }
 
 .hero-badge {
@@ -885,6 +896,10 @@ body {
 
   .stat-divider {
     display: none;
+  }
+
+  .hero-logo-img {
+    height: 95px;
   }
 
   .newsletter-form {
