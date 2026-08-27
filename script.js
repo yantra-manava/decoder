@@ -5,39 +5,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ==========================================================================
-  // 1. STORY CATEGORY FILTERING SYSTEM
-  // ==========================================================================
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const storyCards = document.querySelectorAll('.story-card');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const filter = btn.getAttribute('data-filter');
-
-      storyCards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          card.style.display = 'flex';
-          card.style.opacity = '1';
-          card.style.transform = 'translateY(0)';
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          setTimeout(() => {
-            if (card.style.opacity === '0') {
-              card.style.display = 'none';
-            }
-          }, 200);
-        }
-      });
-    });
-  });
-
-  // ==========================================================================
-  // 2. NEWSLETTER FORM HANDLER (WITH LOCAL STORAGE CAPTURE & CONFIRMATION)
+  // 1. NEWSLETTER FORM HANDLER (WITH LOCAL STORAGE CAPTURE & CONFIRMATION)
   // ==========================================================================
   const newsletterForm = document.getElementById('newsletter-form');
   const emailInput = document.getElementById('subscriber-email');
@@ -73,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // 3. MOBILE MENU TOGGLE
+  // 2. MOBILE MENU TOGGLE
   // ==========================================================================
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const navLinks = document.getElementById('nav-links');

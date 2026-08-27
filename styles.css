@@ -570,144 +570,6 @@ body {
 }
 
 /* ==========================================================================
-   FEATURED STORIES SECTION
-   ========================================================================== */
-
-.story-filters {
-  display: flex;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.filter-btn {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-light);
-  color: var(--text-muted);
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.6rem 1.25rem;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: var(--transition-fast);
-}
-
-.filter-btn:hover {
-  color: var(--accent-gold);
-  border-color: var(--border-gold);
-}
-
-.filter-btn.active {
-  background: var(--accent-gold);
-  color: #000;
-  border-color: var(--accent-gold);
-  font-weight: 700;
-  box-shadow: 0 0 12px var(--accent-gold-glow);
-}
-
-.stories-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 1.75rem;
-}
-
-.story-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  padding: 2rem;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.story-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--border-gold);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-}
-
-.card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.1rem;
-}
-
-.category-tag {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.65rem;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.tech-tag {
-  background: rgba(255, 184, 0, 0.12);
-  color: var(--accent-gold);
-}
-
-.history-tag {
-  background: rgba(255, 191, 0, 0.12);
-  color: #ffbf00;
-}
-
-.politics-tag {
-  background: rgba(255, 77, 77, 0.12);
-  color: #ff4d4d;
-}
-
-.crime-tag {
-  background: rgba(168, 85, 247, 0.12);
-  color: #a855f7;
-}
-
-.story-read {
-  font-size: 0.78rem;
-  color: var(--text-dim);
-}
-
-.story-title {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--accent-white);
-  margin-bottom: 0.85rem;
-  line-height: 1.35;
-}
-
-.story-excerpt {
-  color: var(--text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.55;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.story-footer {
-  padding-top: 1rem;
-  border-top: 1px solid var(--border-light);
-}
-
-.story-link {
-  color: var(--accent-white);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.88rem;
-  transition: var(--transition-fast);
-}
-
-.story-link:hover {
-  color: var(--accent-gold);
-}
-
-/* ==========================================================================
    INSTAGRAM SECTION
    ========================================================================== */
 
@@ -778,67 +640,6 @@ body {
 
 .ig-stats-row strong {
   color: var(--accent-gold);
-}
-
-.ig-posts-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.ig-post-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  padding: 1.75rem;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  transition: var(--transition-normal);
-}
-
-.ig-post-card:hover {
-  border-color: var(--border-gold);
-  transform: translateY(-4px);
-}
-
-.ig-post-badge {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 0.2rem 0.55rem;
-  background: rgba(255, 184, 0, 0.08);
-  border: 1px solid var(--border-gold);
-  color: var(--accent-gold);
-  border-radius: 4px;
-}
-
-.ig-post-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.ig-post-body h4 {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  color: var(--accent-white);
-  margin-bottom: 0.5rem;
-}
-
-.ig-post-body p {
-  color: var(--text-muted);
-  font-size: 0.92rem;
-  margin-bottom: 1.5rem;
-}
-
-.ig-card-link {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--accent-gold);
-  text-decoration: none;
 }
 
 /* ==========================================================================
@@ -1047,22 +848,10 @@ body {
   color: var(--text-dim);
 }
 
-.designer-text {
+.designer-credit {
   color: var(--text-muted);
   font-size: 0.88rem;
   font-weight: 500;
-}
-
-.designer-link {
-  color: var(--accent-gold);
-  text-decoration: none;
-  font-weight: 600;
-  transition: var(--transition-fast);
-}
-
-.designer-link:hover {
-  text-decoration: underline;
-  text-shadow: 0 0 10px var(--accent-gold-glow);
 }
 
 /* Responsive Breakpoints */
